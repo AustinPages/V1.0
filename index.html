@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Office Cat Tycoon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Office Cat Tycoon</h1>
+<p>Coins: <span id="coins">0</span> | Prestige Coins: <span id="prestigeCoins">0</span></p>
+
+<div id="office-container">
+    <img id="office-bg" src="assets/office/background.png" alt="Office Background">
+    <div id="businesses"></div>
+</div>
+
+<h2>Departments</h2>
+<div id="departments"></div>
+
+<div id="actions">
+    <button onclick="prestige()">Prestige Reset</button>
+    <button onclick="watchAd()">Watch Ad for 30s x2 Coins</button>
+    <button onclick="triggerRandomEvent()">Random Event</button>
+</div>
+
+<script src="game.js"></script>
+<script src="ads.js"></script>
+</body>
+</html>
